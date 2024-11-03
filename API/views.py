@@ -200,10 +200,10 @@ class PodioGoogleDriveView(APIView):
         url = 'https://podio.com/oauth/token'
         data = {
             'grant_type': 'password',
-            'client_id': "",
-            'client_secret': "",
-            'username': "",
-            'password': ""
+            'client_id': "mysmarthouse-pgkvtg",
+            'client_secret': "QtWKgcatx7cbXMJAVrVoeYYOaTrvLCpd8zhpci5E6hYdh0RxT5QhOG3x86nyDvIn",
+            'username': "nicole@my-smarthouse.com",
+            'password': "Solar123!"
         }
         response = requests.post(url, data=data)
         response.raise_for_status()  # Ensure an exception is raised if authentication fails
@@ -286,7 +286,7 @@ class PodioGoogleDriveView(APIView):
             service = build('drive', 'v3', credentials=creds)
 
             # Define main and subfolder names
-            parent_folder_id = ""
+            parent_folder_id = "18spa6mXkuwj5jnycEGqmbK8YVuJWaGLV"
             main_folder_name = f"{project_name}-{address}"
             subfolder_name = "SiteCapture Site Survey Images"
 
